@@ -2,13 +2,16 @@ import { useState } from 'react'
 
 
 import './App.css'
+import HomePage from "./pages/HomePage.jsx";
+import {Outlet} from "react-router-dom";
 
 function App() {
 
 
   return (
     <>
-      <h1>WELCOME TO FRONT END</h1>
+ <Outlet/>
+
     </>
   )
 }
