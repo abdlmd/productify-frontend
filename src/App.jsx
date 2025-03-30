@@ -2,13 +2,15 @@ import { useState } from "react";
 
 import "./App.css";
 import HomePage from "./pages/HomePage.jsx";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import NavBar from "./components/NavBar.jsx";
 
 function App() {
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <>
-      <NavBar />
+      {location.pathname !== "/" && <NavBar />}
       <Outlet />
     </>
   );
