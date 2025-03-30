@@ -1,19 +1,17 @@
-import { useState } from 'react'
+import { useState } from "react";
 
-
-import './App.css'
+import "./App.css";
 import HomePage from "./pages/HomePage.jsx";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import NavBar from "./components/NavBar.jsx";
 
 function App() {
-
-
   return (
     <>
- <Outlet/>
-
+      <NavBar />
+      <Outlet />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
