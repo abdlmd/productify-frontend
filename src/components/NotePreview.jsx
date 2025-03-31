@@ -11,7 +11,7 @@ function NotePreview({ noteDescription }) {
         <p>{desc}</p>
       </div>
 
-      <hr className="border-t-1 border-cyan-300" />
+      <hr className="border-t-1 border-gray-700" />
     </div>
   );
 }

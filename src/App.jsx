@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar.jsx";
 
 function App() {
   const location = useLocation();
-  console.log(location.pathname);
+
   return (
     <>
       {location.pathname !== "/" && <NavBar />}
