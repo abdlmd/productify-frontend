@@ -36,7 +36,12 @@ function TaskLayout() {
         <ul className="mt-2">
           {data.map((d) => (
             <li className="mb-4" key={d.id}>
-              <Task name={d.name} completed={d.completed} />
+              <Task
+                name={d.name}
+                completed={d.completed}
+                id={d.id}
+                fetchTasks={fetchTasks()}
+              />
             </li>
           ))}
         </ul>
