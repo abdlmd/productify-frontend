@@ -7,7 +7,7 @@ import Notes from "./pages/Notes.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import TaskLayout from "./pages/TaskLayout.jsx";
-import Habit from "./pages/Habit.jsx";
+import HabitLayout from "./pages/HabitLayout.jsx";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "notes", element: <Notes /> },
       { path: "/tasks", element: <TaskLayout /> },
-      { path: "/habits", element: <Habit /> },
+      { path: "/habits", element: <HabitLayout /> },
       { path: "*", element: <NotFoundPage /> },
     ],
   },
