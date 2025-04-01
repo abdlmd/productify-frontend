@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Notes from "./pages/Notes.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
-import Task from "./pages/Task.jsx";
+import TaskLayout from "./pages/TaskLayout.jsx";
 import Habit from "./pages/Habit.jsx";
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "notes", element: <Notes /> },
-      { path: "/tasks", element: <Task /> },
+      { path: "/tasks", element: <TaskLayout /> },
       { path: "/habits", element: <Habit /> },
       { path: "*", element: <NotFoundPage /> },
     ],
